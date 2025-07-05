@@ -1,0 +1,11 @@
+{
+  "name": "portfolio1",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD\r # MyPortfolio\r developed using HTML , CSS, Javascript , 90% genuine (not copied from anywhere)\r =======\r # Portfolio\r developed using HTML, CSS, Javascript ,and 90% designed and developed by me (not copied from anywhere)\r >>>>>>> f5c1319959a27f70ebcb6981ee2b712eac3c7b6d",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,94 @@
+<<<<<<< HEAD
+.projects {
+    padding: 50px 0;
+}
+
+.project-patch {
+    position: relative;
+    height: 250%; 
+    width: 110%; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+  overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: auto; 
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+}
+
+.project-patch:hover {
+    transform: scale(1.05); /* Slightly zoom the patch on hover */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay on hover */
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); 
+    transition: transform 0.3s, opacity 0.3s; 
+    transform: translateY(0); 
+    opacity: 1; /* Always visible */
+}
+
+.project-patch:hover .project-info {
+    transform: translateY(-10px); /* Pop-up effect on hover */
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+=======
+.projects {
+    padding: 50px 0;
+}
+
+.project-patch {
+    position: relative;
+    height: 500px; 
+    width: 100%; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+}
+
+.project-patch:hover {
+    transform: scale(1.05); /* Slightly zoom the patch on hover */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay on hover */
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); 
+    transition: transform 0.3s, opacity 0.3s; 
+    transform: translateY(0); 
+    opacity: 1; /* Always visible */
+}
+
+.project-patch:hover .project-info {
+    transform: translateY(-10px); /* Pop-up effect on hover */
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+>>>>>>> 70e73a18e9d7c32973b43e167f77b2799fe11cbe

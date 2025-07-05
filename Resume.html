@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/resume.css"> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <style>
+        body {
+            overflow: hidden; 
+        }
+        
+        .patch {
+            background-color: #000000; 
+            color: white; 
+            border-radius: 10px; 
+            padding: 30px; 
+            width: 200px; 
+            height: 250px; 
+             display: flex;
+              text-align: center;
+            position: absolute; 
+            transition: background-color 0.3s, transform 0.3s; 
+        }
+        
+        .patch:hover {
+            background-color: #333333; 
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+     <a class="navbar-brand" href="index.html">My Portfolio</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="About.html">About Me</a></li>
+         <li class="nav-item"><a class="nav-link" href="Portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+     </ul>
+    </div>
+    </nav>
+ <div class="container mt-5">
+        <div class="text-center">
+     <h1 class="display-4 mt-5">Resume</h1>
+      <p class="lead">Download my resume to learn more about my professional journey.</p>
+      <a href="Resume/Akash_Shelar_Resume2.pdf" class="btn btn-primary" download="Akash_shelar_IT_resume.pdf" type="application/pdf" target="_blank">Download Resume</a>
+
+        </div>
+  <div id="patches-container" class="row mt-5" style="position: relative; height: 600px;">
+      <div class="patch hard-skill" style="left: 10%; top: 20%;">Hard Skills: Java, NodeJs, MySQL, MongoDB<br>React, JavaScript, HTML, CSS<br>Docker, GitHub</br></div>
+     <div class="patch soft-skill" style="left: 40%; top: 50%;">Soft Skills:Adaptability, Teamwork, Time Management<br>Leadership, Problem-Solving, Stress Management, Enthusiasm</div>
+     <div class="patch achievement" style="left: 70%; top: 30%;">Achievement:<br>Completed project ahead of schedule, boosting productivity by 1000%.</br> </div>
+     <div class="patch achievement" style="left: 30%; top: 70%;">Achievement: Completed 2 Projects within deadline(in 2 years)</div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+  $(document).ready(function() {
+  const $patches = $('.patch');
+     const containerWidth = $(window).width();
+     const containerHeight = $(window).height();
+ $patches.each(function() {
+  let $patch = $(this);
+ let dx = (Math.random() * 2 - 1) * 2; 
+let dy = (Math.random() * 2 - 1) * 2; 
+ function movePatch() {
+  let offset = $patch.position();
+ let newLeft = offset.left + dx;
+ let newTop = offset.top + dy;
+ if (newLeft < 0 || newLeft + $patch.outerWidth() > containerWidth) {
+      dx = -dx; 
+  }
+     if (newTop < 0 || newTop + $patch.outerHeight() > containerHeight) {
+          dy = -dy; 
+          }
+             $patch.css({
+            left: newLeft,
+             top: newTop
+         });
+             requestAnimationFrame(movePatch); 
+            }
+            movePatch(); 
+          });
+         });
+     </script>
+</body>
+</html>
+
+       
+       
+ 
